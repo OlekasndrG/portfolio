@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "images": [
+      "projects/PhoneBook-LoginPage.png",
+      "/projects/PhoneBook-ContactsPage.png"
+    ],
+    "name": "Personal PhoneBook",
+    "role": "Pet Project. ",
+    "description": "Designed an intuitive user registration system, allowing onboarding. Integrated Google authentication. Implemented user-friendly profile editing, including avatar customization. Introduced subscription plans, offering distinct features such as contact limits, contact avatar editing, and favorites management based on user tiers (Starter, Pro, Business). Developed all main functionalities for adding, updating, and deleting contacts.Elevated code quality through optimization, refactoring, and a commitment to clean and rapid execution. Implemented authentication logic utilizing access tokens generated with JSON Web Tokens (JWT) with an own Mongoose-powered database (MongoDB). Developed comprehensive routes and models for user and contact management, complemented by request checks for data integrity and security.",
+    "stack": [
+      "HTML5/CSS",
+      "React.js",
+      "Node.js",
+      "REST API",
+      "styled-components"
+    ],
+    "additional": [
+      "react-router-dom",
+      "React-redux/Redux Toolkit/RTK Query",
+      "Cloudinary, sendgrid, multer",
+      "Formik/Yup",
+      "Google OAuth2(passport)"
+    ],
+    "link": "https://phone-book-frontend-omega.vercel.app/"
+  },
+  {
+    "id": 2,
+    "images": [
+      "/projects/So-Yummy-signin.png",
+      "/projects/So-Yummy-mainpage1.png",
+      "/projects/So-Yummy-mainpage2.png",
+      "/projects/So-Yummy-categories.png",
+      "/projects/So-Yummy-addrecipe.png"
+    ],
+
+    "name": "SO-YUMMY App",
+    "role": "Team Project. Role - Front-end developer.",
+    "description": "Command Project.SO-YUMMY App is a platform allowing users to craft, use, and share their favorite recipes as they wish with other features. The App functionalities include: creatingnew user accounts, email verification user login, password reset. The main functionalities include: - creating, updating and deleting own recipes; - using the most popular recipes given; - creating recipes on the products given and showing which products needed for created or chosen recipe. Fully responsive application, with own backend and swagger. Perfect for using by customers and service providers. I designed a responsive fixed header with intuitive navigation and implemented robust routing functionalities. The user info block is presented through modals, allowing for easy user editing and dynamic avatar updates. The global state management system ensures a unified login/logout experience.",
+    "stack": ["HTML5/CSS", "React.js"],
+    "additional": ["Notiflix,nanoid,react-loader-spinner", "Formik/Yup"],
+    "link": "https://sergsmilya.github.io/project-team_developer_007_react/"
+  },
+  {
+    "id": 3,
+    "images": ["/projects/News-main-page.png", "/projects/News-readmore.png"],
+
+    "name": "NEWS Website",
+    "role": "Team Project. Role - Team Lead.",
+    "description": "News Search Hub, seamlessly integrates Firebase for user registration, offering a personalized experience where users can explore trending news, discover articles based on categories and dates, and conveniently save their favorite news articles for later reading, combining functionality and user-centric features. Responsible for navigating the complexities of Git branches and resolving conflicts, as well as meeting the deadlines and live site performance.",
+    "stack": ["HTML5/SASS", "Javascript", "REST API"],
+    "additional": ["FireBase", "Webpack bundler"],
+    "link": "https://olekasndrg.github.io/goit-js-project-team1-fs66/"
+  },
+  {
+    "id": 4,
+    "images": [
+      "/projects/Ecosolution-main.png",
+      "/projects/Ecosolution-cases.png"
+    ],
+
+    "name": "Ecosolution",
+    "role": "Landing.",
+    "description": "crafted as a clean and modern landing page for an energy company, this design prioritizes a responsive layout with a mobile-first approach. the focal point is a user-friendly interface, complemented by a seamlessly integrated feedback form to enhance user engagement and satisfaction.",
+    "stack": ["HTML5/SASS", "React.js", "Vite Bundler"],
+    "additional": ["React-scroll", "Swiper"],
+    "link": "https://ecosolution-olekasndrg.vercel.app/"
+  }
+]

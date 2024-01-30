@@ -1,0 +1,92 @@
+@import-normalize;
+
+@font-face {
+  font-family: "FiraSans-Regular";
+  src: local("FiraSans-Regular"),
+    url("./fonts/Fira_Sans/FiraSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: local("Oswald-Regular"),
+    url("./fonts/Oswald/static/Oswald-Regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-green-color: #97d28b;
+  --primary-dark-color: #173d33;
+  --primary-light-color: #dcefd8;
+  --text-color: #173d33;
+  --bg-section-color: #eaedf1;
+  --text-menu-white: #fff;
+  --transition: all 0.4s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f5fa;
+  font-family: "FiraSans-Regular", sans-serif;
+
+  font-style: normal;
+  line-height: normal;
+  color: var(--text-color);
+
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-wrap: balance;
+  font-family: "Oswald-Regular", sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  text-wrap: pretty;
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-dots {
+  margin-bottom: 10px;
+}
+.left-corner {
+  margin-left: -300%; /* Initial position off the screen to the left */
+}
+
+.normal-position {
+  margin-left: 0 !important; /* Set the desired normal position */
+}
