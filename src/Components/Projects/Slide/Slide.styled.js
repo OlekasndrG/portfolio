@@ -1,5 +1,6 @@
 import styled from "styled-components";
-
+import { desktop, tablet } from "../../../Utils/Breakpoints/Breakpoints";
+export { tablet, desktop } from "../../../Utils/Breakpoints/Breakpoints";
 export const SlideContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,9 +15,17 @@ export const SlideContainer = styled.div`
     font-size: 20px;
   }
   img {
-    max-height: 500px;
     width: 100%;
     object-fit: fill;
+    max-height: 300px;
+
+    @media screen and (min-width: ${tablet}) {
+      max-height: 400px;
+    }
+
+    @media screen and (min-width: ${desktop}) {
+      max-height: 500px;
+    }
   }
   a {
     font-size: 20px;

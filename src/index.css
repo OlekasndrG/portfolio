@@ -75,6 +75,7 @@ button {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -83,10 +84,12 @@ a {
 .slick-dots {
   margin-bottom: 10px;
 }
-.left-corner {
-  margin-left: -300%; /* Initial position off the screen to the left */
-}
-
-.normal-position {
-  margin-left: 0 !important; /* Set the desired normal position */
+.element {
+  /* background-color: red; */
+  opacity: 0;
+  &.active {
+    /* background-color: blue; */
+    opacity: 1;
+    transition: opacity 1.5s ease;
+  }
 }

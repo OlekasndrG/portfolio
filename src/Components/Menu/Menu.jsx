@@ -18,7 +18,8 @@ const Menu = ({ onClose }) => {
     setAnimation(false);
     setTimeout(() => {
       onClose();
-    }, 501);
+    }, 701);
+    // onClose();
   };
 
   return (

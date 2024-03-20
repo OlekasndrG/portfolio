@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { desktop, tablet } from "../../Utils/Breakpoints/Breakpoints";
+import { ComponentSection } from "../../App.styled";
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled(ComponentSection)`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { desktop, tablet } from "../../Utils/Breakpoints/Breakpoints";
+import { ComponentSection } from "../../App.styled";
 
-export const SkillsContainer = styled.div`
+export const SkillsContainer = styled(ComponentSection)`
   display: flex;
   flex-direction: column;
   gap: 20px;

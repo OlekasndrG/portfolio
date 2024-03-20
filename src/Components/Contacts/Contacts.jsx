@@ -4,7 +4,7 @@ import { ContactsContainer, Container } from "./Contacts.styled";
 import { Element } from "react-scroll";
 const Contacts = () => {
   return (
-    <Element name="contacts">
+    <Element name="contacts" className="element">
       <ContactsContainer>
         <Title>Contacts</Title>
         <Container>

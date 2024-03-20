@@ -24,11 +24,12 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 import { MainContainer } from "../Hero/Hero.styled";
 import { SkillsContainer } from "./Skills.styled";
+import { Title } from "../../App.styled";
 const Skills = () => {
   return (
-    <Element name="skills">
-      <MainContainer style={{ marginTop: "40px" }}>
-        <h3 style={{ textAlign: "center", fontSize: "45px" }}>Skills</h3>
+    <Element name="skills" className="element">
+      <MainContainer>
+        <Title>Skills</Title>
         <SkillsContainer>
           <h3>Front-End</h3>
           <div>

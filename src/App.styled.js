@@ -29,3 +29,12 @@ export const Title = styled.h3`
     font-size: 45px;
   }
 `;
+export const ComponentSection = styled.section`
+  margin-top: 30px;
+  outline: 1px solid green;
+  padding-bottom: 20px;
+  @media screen and (min-width: ${desktop}) {
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+`;

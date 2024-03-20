@@ -1,11 +1,29 @@
 import styled from "styled-components";
 import { desktop, tablet } from "../../Utils/Breakpoints/Breakpoints";
+import { ComponentSection } from "../../App.styled";
 
-export const ContactsContainer = styled.footer`
+export const ContactsContainer = styled(ComponentSection)`
   display: flex;
   gap: 20px;
   flex-direction: column;
-  margin-top: 10px;
+  padding-top: 20px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  height: 300px;
+  @media screen and (min-width: ${tablet}) {
+    padding-top: 30px;
+
+    height: 400px;
+    margin-bottom: 120px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: ${desktop}) {
+    padding-top: 40px;
+    height: 500px;
+    margin-top: 180px;
+    margin-bottom: 170px;
+  }
 `;
 
 export const Container = styled.div`

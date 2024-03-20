@@ -17,6 +17,7 @@ const Header = () => {
   const [showModal, setShowModal] = useState(false);
 
   const [scrolling, setScrolling] = useState(undefined);
+
   function listenScrollEvent() {
     if (window.scrollY > 20) {
       setScrolling(1);
@@ -33,22 +34,36 @@ const Header = () => {
     return () => window.removeEventListener("scroll", listenScrollEvent);
   }, []);
 
+  const handleSetActive = (to, element) => {
+    console.log(to);
+    console.log(element);
+    // setActiveSection(to);
+    element.classList.add("active");
+    // console.log(activeSection);
+    // activeSection.classList.add("active");
+  };
+  const handleSetInactive = (to, element) => {
+    element.classList.remove("active");
+  };
   // eslint-disable-next-line no-unused-vars
   const openModal = () => {
     setShowModal(true);
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
   };
   const closeModal = () => {
     setShowModal(false);
 
-    // document.body.style.overflow = "visible";
+    document.body.style.overflow = "visible";
   };
   const windowWidth = WindowResizeHook();
 
   return (
     <HeaderContainer scrolling={scrolling}>
       <HeaderAbsoluteContainer>
-        <h2>Portfolio</h2>
+        <a href="portfolio-olekasndrg.vercel.app">
+          <h2>Portfolio</h2>
+        </a>
+
         <NavContainer>
           {windowWidth >= 768 ? (
             <NavList style={{ flexDirection: "row", gap: "18px" }}>
@@ -58,7 +73,9 @@ const Header = () => {
                   smooth={true}
                   spy={true}
                   duration={500}
-                  offset={-150}
+                  offset={-250}
+                  onSetActive={handleSetActive}
+                  onSetInactive={handleSetInactive}
                 >
                   About
                 </HeaderNavLink>
@@ -69,7 +86,9 @@ const Header = () => {
                   smooth={true}
                   spy={true}
                   duration={500}
-                  offset={-150}
+                  offset={-250}
+                  onSetActive={handleSetActive}
+                  onSetInactive={handleSetInactive}
                 >
                   Skills
                 </HeaderNavLink>
@@ -77,10 +96,13 @@ const Header = () => {
               <li>
                 <HeaderNavLink
                   to="projects"
+                  activeClass="active"
+                  onSetActive={handleSetActive}
+                  onSetInactive={handleSetInactive}
                   smooth={true}
                   spy={true}
                   duration={500}
-                  offset={-150}
+                  offset={-250}
                 >
                   Projects
                 </HeaderNavLink>
@@ -91,7 +113,9 @@ const Header = () => {
                   smooth={true}
                   spy={true}
                   duration={500}
-                  offset={-150}
+                  offset={-300}
+                  onSetActive={handleSetActive}
+                  onSetInactive={handleSetInactive}
                 >
                   Contacts
                 </HeaderNavLink>

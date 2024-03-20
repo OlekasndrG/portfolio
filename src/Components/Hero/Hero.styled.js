@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { tablet, desktop } from "../../Utils/Breakpoints/Breakpoints";
+import { ComponentSection } from "../../App.styled";
 
-export const MainContainer = styled.section`
+export const MainContainer = styled(ComponentSection)`
   display: flex;
   flex-direction: column;
   justify-content: center;

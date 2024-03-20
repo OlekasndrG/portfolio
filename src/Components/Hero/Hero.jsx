@@ -33,13 +33,13 @@ const Hero = () => {
   }, [scrollPosition]);
 
   return (
-    <Element name="hero">
+    <Element name="hero" className="element">
       <HeroMainContainer
         ref={movingSectionRef}
         // $leftCorner={scrollPosition <= 200}
         // $normalPosition={scrollPosition > 200}
       >
-        <h1>Hi! I&lsquo;m OLEXANDR HUBSKYI</h1>
+        <h1 style={{ textAlign: "center" }}>Hi! I&lsquo;m OLEXANDR HUBSKYI</h1>
         <h2 style={{ textAlign: "center" }}>Front-End Developer</h2>
         <h3>
           With nearly a decade of experience in the logistics sphere, I recently

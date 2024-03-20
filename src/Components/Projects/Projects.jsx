@@ -19,8 +19,16 @@ const Projects = () => {
   };
 
   return (
-    <Element name="projects">
-      <MainContainer style={{ marginTop: "40px" }}>
+    <Element
+      name="projects"
+      className="element"
+      // style={{
+      //   marginTop: "40px",
+
+      //   height: "1000px",
+      // }}
+    >
+      <MainContainer>
         <Title>Projects</Title>
         <ButtonContainer>
           {data.map((childData) => (
@@ -33,17 +41,16 @@ const Projects = () => {
             </ProjectButton>
           ))}
         </ButtonContainer>
-       
-          {selectedButton && (
-            <Slide
-              name={data[selectedButton - 1].name}
-              images={data[selectedButton - 1].images}
-              stack={data[selectedButton - 1].stack}
-              description={data[selectedButton - 1].description}
-              additional={data[selectedButton - 1].additional}
-            />
-          )}
-        
+
+        {selectedButton && (
+          <Slide
+            name={data[selectedButton - 1].name}
+            images={data[selectedButton - 1].images}
+            stack={data[selectedButton - 1].stack}
+            description={data[selectedButton - 1].description}
+            additional={data[selectedButton - 1].additional}
+          />
+        )}
       </MainContainer>
     </Element>
   );

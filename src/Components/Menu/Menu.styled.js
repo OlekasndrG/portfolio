@@ -2,25 +2,33 @@ import styled, { keyframes } from "styled-components";
 import { tablet } from "../../Utils/Breakpoints/Breakpoints";
 import { Link } from "react-scroll";
 
-const fadeIn = keyframes`
+export const fadeIn = keyframes`
   0% {
-    
+   
     transform: translateY(-100%);
   }
+  /* 50% {
+      transform: translateY(0);
+  } */
   100% {
+  transform: translateY(0);
   
-    transform: translateY(0);
+      /* display: none; */
   }
 `;
 
-const fadeOut = keyframes`
+export const fadeOut = keyframes`
   0% {
    
     transform: translateY(0);
   }
+  /* 50% {
+    transform:translateY(-140%);
+  } */
   100% {
- 
     transform: translateY(-140%);
+display: none;
+    
   }
 `;
 
@@ -36,7 +44,6 @@ export const MenuContainer = styled.div`
   min-height: 360px;
   max-height: calc(100vh - 60px);
 
-  /* overflow: scroll; */
   padding: 24px;
 
   background-color: rgba(23, 61, 51, 0.75);
@@ -48,8 +55,7 @@ export const MenuContainer = styled.div`
   } */
 
   animation-name: ${(props) => (props.$isOpen ? fadeIn : fadeOut)};
-
-  animation-duration: 500ms;
+  animation-duration: 700ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
 `;
