@@ -31,7 +31,7 @@ export const Title = styled.h3`
 `;
 export const ComponentSection = styled.section`
   margin-top: 30px;
-  outline: 1px solid green;
+
   padding-bottom: 20px;
   @media screen and (min-width: ${desktop}) {
     margin-top: 40px;

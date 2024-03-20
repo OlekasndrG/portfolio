@@ -122,13 +122,70 @@ const Header = () => {
               </li>
             </NavList>
           ) : (
-            <BurgerMenuContainer
-              type="button"
-              aria-label="toggle Modal menu"
-              onClick={openModal}
-            >
-              <BurgerMenu />
-            </BurgerMenuContainer>
+            <>
+              <NavList style={{ width: "0", height: "0", opacity: "0" }}>
+                <li>
+                  <HeaderNavLink
+                    to="hero"
+                    smooth={true}
+                    spy={true}
+                    duration={500}
+                    offset={-250}
+                    onSetActive={handleSetActive}
+                    onSetInactive={handleSetInactive}
+                  >
+                    About
+                  </HeaderNavLink>
+                </li>
+                <li>
+                  <HeaderNavLink
+                    to="skills"
+                    smooth={true}
+                    spy={true}
+                    duration={500}
+                    offset={-250}
+                    onSetActive={handleSetActive}
+                    onSetInactive={handleSetInactive}
+                  >
+                    Skills
+                  </HeaderNavLink>
+                </li>
+                <li>
+                  <HeaderNavLink
+                    to="projects"
+                    activeClass="active"
+                    onSetActive={handleSetActive}
+                    onSetInactive={handleSetInactive}
+                    smooth={true}
+                    spy={true}
+                    duration={500}
+                    offset={-250}
+                  >
+                    Projects
+                  </HeaderNavLink>
+                </li>
+                <li>
+                  <HeaderNavLink
+                    to="contacts"
+                    smooth={true}
+                    spy={true}
+                    duration={500}
+                    offset={-300}
+                    onSetActive={handleSetActive}
+                    onSetInactive={handleSetInactive}
+                  >
+                    Contacts
+                  </HeaderNavLink>
+                </li>
+              </NavList>
+              <BurgerMenuContainer
+                type="button"
+                aria-label="toggle Modal menu"
+                onClick={openModal}
+              >
+                <BurgerMenu />
+              </BurgerMenuContainer>
+            </>
           )}
         </NavContainer>
       </HeaderAbsoluteContainer>

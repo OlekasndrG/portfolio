@@ -21,6 +21,15 @@ const Menu = ({ onClose }) => {
     }, 701);
     // onClose();
   };
+  const handleSetActive = (to, element) => {
+    console.log(to);
+    console.log(element);
+
+    element.classList.add("active");
+  };
+  const handleSetInactive = (to, element) => {
+    element.classList.remove("active");
+  };
 
   return (
     <MenuContainer $isOpen={animation}>
@@ -84,7 +93,7 @@ const Menu = ({ onClose }) => {
               smooth={true}
               spy={true}
               duration={500}
-              offset={+150}
+              offset={-300}
               onClick={() =>
                 setTimeout(() => {
                   onClose();
