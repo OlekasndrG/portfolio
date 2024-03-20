@@ -19,16 +19,8 @@ const Projects = () => {
   };
 
   return (
-    <Element
-      name="projects"
-      className="element"
-      // style={{
-      //   marginTop: "40px",
-
-      //   height: "1000px",
-      // }}
-    >
-      <MainContainer>
+    <Element name="projects" className="element">
+      <MainContainer style={{ marginTop: "0" }}>
         <Title>Projects</Title>
         <ButtonContainer>
           {data.map((childData) => (

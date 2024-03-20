@@ -28,7 +28,7 @@ import { Title } from "../../App.styled";
 const Skills = () => {
   return (
     <Element name="skills" className="element">
-      <MainContainer>
+      <MainContainer style={{ marginTop: "0" }}>
         <Title>Skills</Title>
         <SkillsContainer>
           <h3>Front-End</h3>

@@ -17,7 +17,7 @@ const Hero = () => {
     //     movingSectionRef.current.classList.add("normal-position");
     //   }
     // };
-    if (movingSectionRef.current && scrollPosition < 450) {
+    if (movingSectionRef.current && scrollPosition < 430) {
       movingSectionRef.current.style.marginLeft = "0";
     } else if (movingSectionRef.current) {
       movingSectionRef.current.style.marginLeft = "-300%";
@@ -30,7 +30,8 @@ const Hero = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollPosition]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Element name="hero" className="element">
@@ -39,7 +40,10 @@ const Hero = () => {
         // $leftCorner={scrollPosition <= 200}
         // $normalPosition={scrollPosition > 200}
       >
-        <h1 style={{ textAlign: "center" }}>Hi! I&lsquo;m OLEXANDR HUBSKYI</h1>
+        <h1 style={{ textAlign: "center" }}>
+          Hi! I&lsquo;m <br />
+          OLEXANDR HUBSKYI
+        </h1>
         <h2 style={{ textAlign: "center" }}>Front-End Developer</h2>
         <h3>
           With nearly a decade of experience in the logistics sphere, I recently

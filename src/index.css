@@ -88,10 +88,10 @@ a {
 }
 .element {
   /* background-color: red; */
-  opacity: 0;
+  opacity: 0.4;
   &.active {
     /* background-color: blue; */
     opacity: 1;
-    transition: opacity 1.5s ease;
+    transition: opacity 2s ease;
   }
 }
