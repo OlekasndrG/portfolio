@@ -35,12 +35,7 @@ const Header = () => {
   }, []);
 
   const handleSetActive = (to, element) => {
-    console.log(to);
-    console.log(element);
-    // setActiveSection(to);
     element.classList.add("active");
-    // console.log(activeSection);
-    // activeSection.classList.add("active");
   };
   const handleSetInactive = (to, element) => {
     element.classList.remove("active");
@@ -122,8 +117,16 @@ const Header = () => {
               </li>
             </NavList>
           ) : (
-            <>
-              <NavList style={{ width: "0", height: "0", opacity: "0" }}>
+            <BurgerMenuContainer
+              type="button"
+              aria-label="toggle Modal menu"
+              onClick={openModal}
+            >
+              <NavList
+                style={{
+                  display: "none",
+                }}
+              >
                 <li>
                   <HeaderNavLink
                     to="hero"
@@ -178,14 +181,8 @@ const Header = () => {
                   </HeaderNavLink>
                 </li>
               </NavList>
-              <BurgerMenuContainer
-                type="button"
-                aria-label="toggle Modal menu"
-                onClick={openModal}
-              >
-                <BurgerMenu />
-              </BurgerMenuContainer>
-            </>
+              <BurgerMenu />
+            </BurgerMenuContainer>
           )}
         </NavContainer>
       </HeaderAbsoluteContainer>

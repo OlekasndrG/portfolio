@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { tablet } from "../../Utils/Breakpoints/Breakpoints";
+
 import { Link } from "react-scroll";
 
 export const fadeIn = keyframes`
@@ -27,7 +27,7 @@ export const fadeOut = keyframes`
   } */
   100% {
     transform: translateY(-140%);
-display: none;
+
     
   }
 `;
@@ -41,18 +41,14 @@ export const MenuContainer = styled.div`
   top: 108px;
   right: 20px;
   width: calc(100% - 40px);
-  min-height: 360px;
-  max-height: calc(100vh - 60px);
+  min-height: 260px;
+  max-height: calc(100% - 60px);
 
   padding: 24px;
 
   background-color: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
   border-radius: 25px;
-
-  /* @media screen and (min-width: ${tablet}) {
-    width: 320px;
-  } */
 
   animation-name: ${(props) => (props.$isOpen ? fadeIn : fadeOut)};
   animation-duration: 700ms;

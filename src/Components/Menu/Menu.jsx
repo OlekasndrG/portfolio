@@ -22,15 +22,11 @@ const Menu = ({ onClose }) => {
     // onClose();
   };
   const handleSetActive = (to, element) => {
-    console.log(to);
-    console.log(element);
-
     element.classList.add("active");
   };
   const handleSetInactive = (to, element) => {
     element.classList.remove("active");
   };
-
   return (
     <MenuContainer $isOpen={animation}>
       <CrossContainer onClick={handleClosewithAnimation}>
@@ -46,11 +42,13 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
-              onClick={() =>
+              onSetActive={handleSetActive}
+              onSetInactive={handleSetInactive}
+              onClick={() => {
                 setTimeout(() => {
                   onClose();
-                }, 750)
-              }
+                }, 701);
+              }}
             >
               <span>About</span> <Arrow />
             </NavLink>
@@ -62,11 +60,13 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
-              onClick={() =>
+              onSetActive={handleSetActive}
+              onSetInactive={handleSetInactive}
+              onClick={() => {
                 setTimeout(() => {
                   onClose();
-                }, 750)
-              }
+                }, 701);
+              }}
             >
               <span>Skills</span> <Arrow />
             </NavLink>
@@ -78,11 +78,13 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-150}
-              onClick={() =>
+              onSetActive={handleSetActive}
+              onSetInactive={handleSetInactive}
+              onClick={() => {
                 setTimeout(() => {
                   onClose();
-                }, 750)
-              }
+                }, 701);
+              }}
             >
               <span>Projects</span> <Arrow />
             </NavLink>
@@ -94,11 +96,13 @@ const Menu = ({ onClose }) => {
               spy={true}
               duration={500}
               offset={-300}
-              onClick={() =>
+              onSetActive={handleSetActive}
+              onSetInactive={handleSetInactive}
+              onClick={() => {
                 setTimeout(() => {
                   onClose();
-                }, 750)
-              }
+                }, 701);
+              }}
             >
               <span>Contacts</span> <Arrow />
             </NavLink>
