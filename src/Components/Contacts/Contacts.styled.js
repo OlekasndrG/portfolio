@@ -8,14 +8,14 @@ export const ContactsContainer = styled(ComponentSection)`
   flex-direction: column;
   padding-top: 20px;
   margin-bottom: 80px;
-  margin-top: 40px;
+  margin-top: 140px;
   height: 300px;
   @media screen and (min-width: ${tablet}) {
     padding-top: 30px;
 
-    height: 400px;
-    margin-bottom: 120px;
-    margin-top: 60px;
+    height: 500px;
+    margin-bottom: 180px;
+    margin-top: 180px;
   }
 
   @media screen and (min-width: ${desktop}) {

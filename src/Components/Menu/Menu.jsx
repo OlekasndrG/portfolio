@@ -95,7 +95,7 @@ const Menu = ({ onClose }) => {
               smooth={true}
               spy={true}
               duration={500}
-              offset={-300}
+              offset={-500}
               onSetActive={handleSetActive}
               onSetInactive={handleSetInactive}
               onClick={() => {

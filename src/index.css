@@ -25,9 +25,9 @@
 * {
   box-sizing: border-box;
 }
-html {
+/* html {
   height: 100vh;
-}
+} */
 body {
   background-color: #f3f5fa;
   font-family: "FiraSans-Regular", sans-serif;
