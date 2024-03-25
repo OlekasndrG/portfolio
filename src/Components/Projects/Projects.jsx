@@ -41,6 +41,7 @@ const Projects = () => {
             stack={data[selectedButton - 1].stack}
             description={data[selectedButton - 1].description}
             additional={data[selectedButton - 1].additional}
+            link={data[selectedButton - 1].link}
           />
         )}
       </MainContainer>
