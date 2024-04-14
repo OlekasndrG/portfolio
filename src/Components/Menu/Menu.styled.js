@@ -51,6 +51,7 @@ export const MenuContainer = styled.div`
   border-radius: 25px;
 
   animation-name: ${(props) => (props.$isOpen ? fadeIn : fadeOut)};
+
   animation-duration: 700ms;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;

@@ -20,11 +20,11 @@ export const SlideContainer = styled.div`
     max-height: 300px;
 
     @media screen and (min-width: ${tablet}) {
-      max-height: 400px;
+      max-height: 480px;
     }
 
     @media screen and (min-width: ${desktop}) {
-      max-height: 500px;
+      max-height: 580px;
     }
   }
   a {

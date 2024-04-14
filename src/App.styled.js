@@ -20,13 +20,13 @@ export const MainContainer = styled.div`
 
 export const Title = styled.h3`
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 
   @media screen and (min-width: ${tablet}) {
-    font-size: 30px;
+    font-size: 36px;
   }
   @media screen and (min-width: ${desktop}) {
-    font-size: 45px;
+    font-size: 44px;
   }
 `;
 export const ComponentSection = styled.section`

@@ -3,7 +3,8 @@
     "id": 1,
     "images": [
       "projects/PhoneBook-LoginPage.png",
-      "/projects/PhoneBook-ContactsPage.png"
+      "/projects/PhoneBook-ContactsPage.png",
+      "/projects/PhoneBook-Homepage.png"
     ],
     "name": "Personal PhoneBook",
     "role": "Pet Project. ",

@@ -53,6 +53,4 @@ export const MainContainer = styled(ComponentSection)`
 export const HeroMainContainer = styled(MainContainer)`
   margin-left: -300%;
   transition: margin-left 3s ease;
-  /* ${(props) => props.$leftCorner && "margin-left: -100%;"}
-  ${(props) => props.$normalPosition && "margin-left: 0;"} */
 `;
