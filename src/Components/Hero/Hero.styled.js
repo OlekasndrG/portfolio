@@ -74,16 +74,23 @@ export const TrymeAnchor = styled.a`
   opacity: 0;
   padding: 10px;
   transform: none;
-  transition: opacity 3.3s ease 3.3s;
+
+  transition: opacity 3s ease 5.5s;
   font-size: 28px;
   font-family: "Oswald-Regular", sans-serif;
   font-weight: bold;
   width: fit-content;
 
   cursor: pointer;
+  scale: 1;
 
   @media screen and (min-width: ${desktop}) {
     font-size: 28px;
+  }
+  &:hover,
+  &:focus {
+    transition: scale 0.4s ease;
+    scale: 1.1;
   }
 `;
 export const HeroMainContainer = styled(MainContainer)`
