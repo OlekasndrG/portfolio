@@ -14,7 +14,7 @@
 
 :root {
   --primary-green-color: #97d28b;
-  --primary-dark-color: #173d33;
+  --primary-dark-color: rgb(23, 61, 51);
   --primary-light-color: #dcefd8;
   --text-color: #173d33;
   --bg-section-color: #eaedf1;
@@ -87,11 +87,34 @@ a {
   margin-bottom: 10px;
 }
 .element {
-  /* background-color: red; */
   opacity: 0.4;
   &.active {
-    /* background-color: blue; */
     opacity: 1;
     transition: opacity 2s ease;
   }
+}
+
+.typed-cursor {
+  opacity: 1;
+  font: inherit;
+  font-size: 20px;
+  color: inherit;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .typed-cursor {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+}
+@media (min-width: 1280px) {
+  .typed-cursor {
+    font-size: 34px;
+    margin-bottom: 6px;
+  }
+}
+.fade {
+  transition: color 8s;
+  color: transparent;
 }

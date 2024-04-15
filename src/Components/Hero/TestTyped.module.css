@@ -1,0 +1,32 @@
+.spanContainer {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  text-align: start;
+  font-size: 22px;
+  width: 100%;
+  text-shadow: 1px 1px 3px rgba(23, 61, 51, 0.4);
+
+  margin-bottom: 10px;
+}
+@media (max-width: 400px) {
+  .spanContainer {
+    height: 40px;
+
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .spanContainer {
+    height: 40px;
+
+    font-size: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .spanContainer {
+    height: 50px;
+
+    font-size: 40px;
+  }
+}

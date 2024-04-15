@@ -1,10 +1,18 @@
 import { Element } from "react-scroll";
-import { HeroMainContainer } from "./Hero.styled";
+import {
+  HeroMainContainer,
+  HeroDescritionText,
+  TrymeAnchor,
+} from "./Hero.styled";
 import { useEffect, useRef, useState } from "react";
+import { TypedText } from "./TestTyped";
 
 const Hero = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const movingSectionRef = useRef(null);
+  const movingTextRef = useRef(null);
+  const anchorRef = useRef(null);
+  // const el2 = useRef(null);
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };
@@ -12,15 +20,15 @@ const Hero = () => {
   useEffect(() => {
     handleScroll(); // Set initial scroll position
 
-    // const handleInitialAnimation = () => {
-    //   if (movingSectionRef.current) {
-    //     movingSectionRef.current.classList.add("normal-position");
-    //   }
-    // };
-    if (movingSectionRef.current && scrollPosition < 430) {
-      movingSectionRef.current.style.marginLeft = "0";
+    if (movingSectionRef.current && !scrollPosition) {
+      movingSectionRef.current.style.transform = "translateX(0)";
+
+      movingTextRef.current.style.opacity = "1";
+      anchorRef.current.style.opacity = "1";
     } else if (movingSectionRef.current) {
-      movingSectionRef.current.style.marginLeft = "-300%";
+      movingSectionRef.current.style.transform = "translateX(-300%)";
+      movingTextRef.current.style.opacity = "0";
+      anchorRef.current.style.opacity = "0";
     }
 
     // Trigger initial animation after the component is mounted
@@ -34,18 +42,17 @@ const Hero = () => {
   }, []);
 
   return (
-    <Element name="hero" className="element">
-      <HeroMainContainer
-        ref={movingSectionRef}
-        // $leftCorner={scrollPosition <= 200}
-        // $normalPosition={scrollPosition > 200}
-      >
-        <h1 style={{ textAlign: "center" }}>
+    <Element name="hero" className="element active">
+      <HeroMainContainer ref={movingSectionRef}>
+        <h1>
           Hi! I&lsquo;m <br />
           OLEXANDR HUBSKYI
         </h1>
-        <h2 style={{ textAlign: "center" }}>Front-End Developer</h2>
-        <h3>
+        <h2 style={{ display: "flex", alignItems: "center" }}>
+          <TypedText />
+        </h2>
+
+        <HeroDescritionText ref={movingTextRef}>
           With nearly a decade of experience in the logistics sphere, I recently
           transitioned to the dynamic field of IT, driven by a passion for
           tackling exacting challenges and a steadfast commitment to continuous
@@ -57,8 +64,10 @@ const Hero = () => {
           the ability to autonomously tackle urgent tasks and problems. <br />
           Prepared to roll up my sleeves, I am eager to contribute my skills and
           passion to the ever-evolving landscape of opportunities.
-        </h3>
-        <span>Try me ! </span>
+        </HeroDescritionText>
+        <TrymeAnchor href="https://t.me/GubskiyAlexandr" ref={anchorRef}>
+          <span>Try me ! </span>
+        </TrymeAnchor>
       </HeroMainContainer>
     </Element>
   );

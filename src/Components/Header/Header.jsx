@@ -70,7 +70,7 @@ const Header = () => {
                   duration={500}
                   offset={-250}
                   onSetActive={handleSetActive}
-                  onSetInactive={handleSetInactive}
+                  onSetInactive={handleSetActive}
                 >
                   About
                 </HeaderNavLink>
@@ -81,7 +81,7 @@ const Header = () => {
                   smooth={true}
                   spy={true}
                   duration={500}
-                  offset={-250}
+                  offset={-350}
                   onSetActive={handleSetActive}
                   onSetInactive={handleSetInactive}
                 >

@@ -16,7 +16,7 @@ export const SlideContainer = styled.div`
   }
   img {
     width: 100%;
-    object-fit: fill;
+    object-fit: contain;
     max-height: 300px;
 
     @media screen and (min-width: ${tablet}) {
@@ -24,7 +24,7 @@ export const SlideContainer = styled.div`
     }
 
     @media screen and (min-width: ${desktop}) {
-      max-height: 580px;
+      max-height: 520px;
     }
   }
   a {
