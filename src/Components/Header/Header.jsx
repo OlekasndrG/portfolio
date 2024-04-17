@@ -51,6 +51,7 @@ const Header = () => {
     document.body.style.overflow = "visible";
   };
   const windowWidth = WindowResizeHook();
+  const NotMobileWidth = windowWidth >= 768;
 
   return (
     <HeaderContainer scrolling={scrolling}>
@@ -60,7 +61,7 @@ const Header = () => {
         </a>
 
         <NavContainer>
-          {windowWidth >= 768 ? (
+          {NotMobileWidth ? (
             <NavList style={{ flexDirection: "row", gap: "18px" }}>
               <li>
                 <HeaderNavLink

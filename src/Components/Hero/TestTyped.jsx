@@ -9,7 +9,7 @@ export function TypedText() {
     const typed = new Typed(el.current, {
       strings: ["  JUNIOR FULL STACK / FRONT-END DEVELOPER"],
       typeSpeed: 50,
-      startDelay: 2500,
+      startDelay: 2800,
       loop: false,
       backSpeed: 0,
       showCursor: true,
@@ -17,7 +17,7 @@ export function TypedText() {
         self.cursor.classList.add("fade");
       },
     });
-  
+
     return () => {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();

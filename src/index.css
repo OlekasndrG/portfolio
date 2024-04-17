@@ -96,22 +96,36 @@ a {
 
 .typed-cursor {
   opacity: 1;
+  display: flex;
+  align-self: center;
   font: inherit;
-  font-size: 20px;
+  font-size: 18px;
   color: inherit;
-  margin-bottom: 10px;
-  margin-left: 5px;
+  padding-bottom: 5px;
+  /* margin-bottom: 10px;
+  margin-left: 3px; */
 }
+@media (max-width: 400px) {
+  .typed-cursor {
+    height: 40px;
+
+    font-size: 16px;
+  }
+}
+
 @media (min-width: 768px) {
   .typed-cursor {
     font-size: 26px;
-    margin-bottom: 8px;
+    padding-top: 8px;
+    /* margin-bottom: 8px; */
+    /* margin-left: 5px; */
   }
 }
 @media (min-width: 1280px) {
   .typed-cursor {
     font-size: 34px;
-    margin-bottom: 6px;
+    padding-top: 12px;
+    /* margin-bottom: 6px; */
   }
 }
 .fade {

@@ -48,7 +48,14 @@ const Hero = () => {
           Hi! I&lsquo;m <br />
           OLEXANDR HUBSKYI
         </h1>
-        <h2 style={{ display: "flex", alignItems: "center" }}>
+        <h2
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "5px",
+            marginBottom: "6px",
+          }}
+        >
           <TypedText />
         </h2>
 
