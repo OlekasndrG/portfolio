@@ -52,7 +52,7 @@ const Header = () => {
   };
   const windowWidth = WindowResizeHook();
   const NotMobileWidth = windowWidth >= 768;
-
+  const offsetContacts = NotMobileWidth ? -300 : -350;
   return (
     <HeaderContainer scrolling={scrolling}>
       <HeaderAbsoluteContainer>
@@ -109,7 +109,7 @@ const Header = () => {
                   smooth={true}
                   spy={true}
                   duration={500}
-                  offset={-300}
+                  offset={offsetContacts}
                   onSetActive={handleSetActive}
                   onSetInactive={handleSetInactive}
                 >
@@ -174,7 +174,7 @@ const Header = () => {
                     smooth={true}
                     spy={true}
                     duration={500}
-                    offset={-300}
+                    offset={offsetContacts}
                     onSetActive={handleSetActive}
                     onSetInactive={handleSetInactive}
                   >

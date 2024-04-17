@@ -88,6 +88,7 @@ a {
 }
 .element {
   opacity: 0.4;
+  transition: opacity 2s ease;
   &.active {
     opacity: 1;
     transition: opacity 2s ease;
@@ -132,3 +133,8 @@ a {
   transition: color 8s;
   color: transparent;
 }
+/* .contacts {
+  margin-bottom: 80px;
+  margin-top: 140px;
+  height: 500px;
+} */

@@ -55,7 +55,14 @@ export const Slide = ({
       <p>{description}</p>
       <a href={link}>Link to Project</a>
       <StackContainer>
-        <ul>
+        <ul
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            textAlign: "initial",
+          }}
+        >
           <span>Stack:</span>
           {stack?.map((item, index) => {
             return (
@@ -65,7 +72,15 @@ export const Slide = ({
             );
           })}
         </ul>
-        <ul style={{ listStyle: "inside" }}>
+        <ul
+          style={{
+            listStyle: "inside",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            textAlign: "initial",
+          }}
+        >
           <span>Additional packages used:</span>
           {additional?.map((item, index) => {
             return (

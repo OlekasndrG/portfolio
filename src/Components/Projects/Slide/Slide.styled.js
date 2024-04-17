@@ -39,4 +39,5 @@ export const StackContainer = styled.div`
   line-height: 1.3;
   font-size: 18px;
   font-weight: bold;
+  
 `;

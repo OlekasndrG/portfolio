@@ -27,6 +27,7 @@ const Menu = ({ onClose }) => {
   const handleSetInactive = (to, element) => {
     element.classList.remove("active");
   };
+
   return (
     <MenuContainer $isOpen={animation}>
       <CrossContainer onClick={handleClosewithAnimation}>
@@ -95,7 +96,7 @@ const Menu = ({ onClose }) => {
               smooth={true}
               spy={true}
               duration={500}
-              offset={-500}
+              offset={-350}
               onSetActive={handleSetActive}
               onSetInactive={handleSetInactive}
               onClick={() => {

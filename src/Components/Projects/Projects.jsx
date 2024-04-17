@@ -19,7 +19,7 @@ const Projects = () => {
   };
 
   return (
-    <Element name="projects" className="element">
+    <Element name="projects" className="element" id="projects">
       <MainContainer style={{ marginTop: "0" }}>
         <Title>Projects</Title>
         <ButtonContainer>

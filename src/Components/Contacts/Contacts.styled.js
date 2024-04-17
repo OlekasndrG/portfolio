@@ -7,22 +7,24 @@ export const ContactsContainer = styled(ComponentSection)`
   gap: 20px;
   flex-direction: column;
   padding-top: 20px;
-  margin-bottom: 80px;
-  margin-top: 140px;
-  height: 300px;
+  padding-bottom: 80px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+  /* height: 300px; */
   @media screen and (min-width: ${tablet}) {
+    min-height: 320px;
     padding-top: 30px;
-
-    height: 500px;
-    margin-bottom: 180px;
-    margin-top: 180px;
+    padding-bottom: 60px;
+    margin-top: 80px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: ${desktop}) {
+    min-height: 350px;
     padding-top: 40px;
-    height: 500px;
-    margin-top: 180px;
-    margin-bottom: 170px;
+    padding-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -39,8 +41,8 @@ export const Container = styled.div`
   svg {
     fill: black;
     stroke: white;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   @media screen and (min-width: ${tablet}) {
@@ -54,8 +56,30 @@ export const Container = styled.div`
   @media screen and (min-width: ${desktop}) {
     gap: 35px;
     svg {
-      width: 60px;
-      height: 60px;
+      width: 64px;
+      height: 64px;
     }
+  }
+`;
+export const QuoteContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding-inline: 15px;
+  & p {
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  & span {
+    align-self: flex-end;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
   }
 `;
