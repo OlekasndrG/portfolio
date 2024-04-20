@@ -18,10 +18,11 @@
     ],
     "additional": [
       "react-router-dom",
-      "React-redux/Redux Toolkit/RTK Query",
+
       "Cloudinary, sendgrid, multer",
       "Formik/Yup",
-      "Google OAuth2(passport)"
+      "Google OAuth2(passport)",
+      "React-redux/Redux Toolkit/RTK Query"
     ],
     "link": "https://phone-book-frontend-omega.vercel.app/"
   },

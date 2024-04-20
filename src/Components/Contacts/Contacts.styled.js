@@ -66,7 +66,7 @@ export const QuoteContainer = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
+  min-height: 200px;
   width: 100%;
   gap: 10px;
   margin-bottom: 30px;

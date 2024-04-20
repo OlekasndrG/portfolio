@@ -39,5 +39,13 @@ export const StackContainer = styled.div`
   line-height: 1.3;
   font-size: 18px;
   font-weight: bold;
-  
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: initial;
+    @media (max-width: 766px) {
+      font-size: 12px;
+    }
+  }
 `;

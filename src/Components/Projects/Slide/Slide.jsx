@@ -57,10 +57,7 @@ export const Slide = ({
       <StackContainer>
         <ul
           style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            textAlign: "initial",
+            
           }}
         >
           <span>Stack:</span>
